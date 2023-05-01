@@ -1,0 +1,120 @@
+:root {
+  --text: #98a6bd;
+  --primary: 	#2ab2af;
+  --secondary: #4abebd;
+  --tertiary: 	#c0df34;
+  --bg: 	#e5eff5;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  font-family: 'Karla', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg);
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.gridContainer {
+  display: grid;
+  max-width: 32rem;
+  margin: 7rem 0;
+}
+.gridContainer--box {
+  padding: 25px;
+}
+/* BOX 1 */
+.gridContainer--box:first-child {
+  background-color: var(--white);
+  border-radius: 8px 8px 0 0;
+}
+.gridContainer--box1--tittle {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.gridContainer--box1--p1 {
+  color: var(--tertiary);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.gridContainer--box1--p2 {
+  color: var(--text);
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+
+/* BOX 2 */
+.gridContainer--box:nth-child(2) {
+  background-color: #2ab2af;
+}
+.gridContainer--box2--tittle {
+  color: var(--white);
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+.gridContainer--box2--price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.gridContainer--box2--priceNum {
+ color: var(--white); 
+ font-size: 3rem;
+ font-weight: 700;
+}
+.gridContainer--box2--priceText {
+  color: #ffffff85;
+  font-size: 1.4rem;
+}
+.gridContainer--box2--p {
+  color: var(--white);
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+.gridContainer--box2--button {
+  width: 100%;
+  height: 5rem;
+  border: none;
+  color: var(--white);
+  background-color: var(--tertiary);
+  border-radius: 1rem;
+}
+.gridContainer--box2--button:hover {
+  background-color: var(--white);
+  color: var(--tertiary);
+  transition: all 0.4s;
+}
+
+/* BOX 3 */
+.gridContainer--box:nth-child(3) {
+  background-color: var(--secondary);
+  border-radius: 0 0 8px 8px;
+}
+.gridContainer--box3--tittle {
+  color: var(--white);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+ul > li {
+  font-size: 1.4rem;
+  color: var(--white);
+}
