@@ -118,3 +118,40 @@ ul > li {
   font-size: 1.4rem;
   color: var(--white);
 }
+
+@media (min-width: 75rem) {
+  .gridContainer {
+    display: grid;
+    max-width: 63.6rem;
+    grid-template-columns: repeat(2, 31.8rem);
+  }
+  /* BOX 1 */
+  .gridContainer--box:first-child {
+    grid-column: 1/3;
+    padding: 4.5rem 4rem;
+  }
+  .gridContainer--box1--tittle {
+    font-size: 2.2rem;
+  }
+  .gridContainer--box1--p2 {
+    font-size: 1.6rem;
+  }
+  /* BOX 2 */
+  .gridContainer--box:nth-child(2) {
+    border-radius: 0 0 0 8px;
+    padding: 4rem;
+  }
+  .gridContainer--box2--tittle {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .gridContainer--box2--p {
+    font-size: 1.6rem;
+  }
+  /* BOX 3 */
+  .gridContainer--box:nth-child(3) {
+    background-color: var(--secondary);
+    border-radius: 0 0 8px 0;
+    padding: 4rem;
+  }
+}
